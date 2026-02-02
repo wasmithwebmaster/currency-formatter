@@ -1,34 +1,34 @@
-Currency Input Formatter (USD)
+# Currency Input Formatter (USD)
 
 A lightweight, dependency-free JavaScript utility that automatically formats input fields as USD currency while the user types.
 
-This script listens for input changes and converts numeric values into a dollar format with commas (e.g. $12,345).
+This script listens for input events and converts numeric values into a dollar format with commas (for example, $12,345).
 
-Usage
+## Usage
 
-Include the script on your site (inline or as an external file).
+Include the script on your site, either inline or as an external file.
 
-Add the attribute data-format="currency" to any <input> element you want formatted.
+Add the attribute data-format="currency" to any input you want formatted.
 
 <input type="text" data-format="currency" />
 
 
-The formatter will:
+## The formatter will:
 
-Strip non-numeric characters
+Strip all non-numeric characters
 
-Apply U.S. dollar formatting
+Format the value as U.S. dollars
 
-Update the input value in real time
+Update the input value in real time as the user types
 
-Notes
+## Notes
 
-Formatting is display-only. The underlying numeric value should be cleaned server-side before processing.
+Formatting is display-only. Always sanitize and convert values server-side.
 
-This script does not handle decimals by design.
+Decimal handling is intentionally excluded.
 
-Intended for simple forms and UI helpers, not financial calculations.
+Designed for UI convenience, not financial calculations.
 
-Browser Support
+### Browser Support
 
 Works in all modern browsers that support addEventListener and toLocaleString.
